@@ -14,6 +14,7 @@
 #   Hash. Some inputs take multiple sections in [[double brackets]].
 
 define telegraf::input (
+  $ensure	  = present,
   $plugin_type    = $name,
   $options        = undef,
   $single_section = undef,
